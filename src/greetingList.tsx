@@ -15,14 +15,14 @@ export const GreetingList = () => {
     }
   
 
-    const handleAddName = (e) => {
+    const handleAddName = (e: any) => {
         e.preventDefault()
         nameData.push(new Person(inputText))
         setGreeted(nameData)
         setInputText("")
     }
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: any) => {
         setInputText(e.target.value)
     }
 
